@@ -1,4 +1,5 @@
 def turn_count(board)
+  binding.pry
   board.collect { |space| space != " " }.length
 end
 
