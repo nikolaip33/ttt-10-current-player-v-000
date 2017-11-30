@@ -11,9 +11,10 @@ def turn_count(board)
       turn_count += 1
       else
       turn_count += 0
-          end
-    retun turn_count
+      end
+
   end
+  retun turn_count
 end
 
 
