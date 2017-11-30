@@ -8,14 +8,14 @@ require 'pry'
 #   board.count { |turns| turns != " " }
 # end
 
-def turn_count(board)
-  9 - board.count(" ")
-end
+# def turn_count(board)
+#   9 - board.count(" ")
+# end
 
 def turn_count(board)
   num_turns = 0
   board.each do |turns|
-    num_turns += 1 if turns != " ""
+    num_turns += 1 if turns != " "
   end
 end
 
