@@ -1,7 +1,19 @@
 require 'pry'
 
+# def turn_count(board)
+#   board.select { |space| space != " " }.length
+# end
+
 def turn_count(board)
-  board.select { |space| space != " " }.length
+  turn_count = 0
+  board.each do |turns|
+      if turns == "X" || turns =="O"
+      then turn_count += 1
+      else
+      turn_count += 0
+          end
+    retun turn_count
+  end
 end
 
 
