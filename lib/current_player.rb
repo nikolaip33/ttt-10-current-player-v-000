@@ -14,7 +14,7 @@ def turn_count(board)
       end
 
   end
-  return turn_count
+  
 end
 
 
