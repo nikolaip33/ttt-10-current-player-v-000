@@ -5,9 +5,15 @@ require 'pry'
 # end
 
 def turn_count(board)
-  board.count do |turns|
-    turns == "X" || turns =="O"
+  turn_count = 0
+  board.each do |turns|
+      if turns == "X" || turns =="O"
+    turn_count += 1
+      else
+      turn_count += 0
+      end
   end
+  turn_count
 end
 
 
