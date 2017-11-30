@@ -1,5 +1,5 @@
 def turn_count(board)
-  board.collect { |space| space = " " }.length
+  board.collect { |space| space != " " }.length
 end
 
 
