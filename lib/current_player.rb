@@ -4,8 +4,12 @@ require 'pry'
 #   board.select { |space| space != " " }.length
 # end
 
+# def turn_count(board)
+#   board.count { |turns| turns != " " }
+# end
+
 def turn_count(board)
-  board.count { |turns| turns != " " }
+  9 - board.count(" ")
 end
 
 
