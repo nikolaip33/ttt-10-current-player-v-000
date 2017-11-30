@@ -7,11 +7,9 @@ require 'pry'
 def turn_count(board)
   turn_count = 0
   board.each do |turns|
-      if turns == "X" || turns =="O"
-    turn_count += 1
-      else
-      turn_count += 0
-      end
+      turn_count += 1 if turns == "X" || turns =="O"
+    
+
   end
   turn_count
 end
