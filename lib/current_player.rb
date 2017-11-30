@@ -5,7 +5,7 @@ require 'pry'
 # end
 
 def turn_count(board)
-  board.count { |turns| turns == "X" || turns =="O" }
+  board.count { |turns| turns != " " }
 end
 
 
