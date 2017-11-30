@@ -1,7 +1,7 @@
 require 'pry'
 
 def turn_count(board)
-  f = board.collect { |space| space != " " }
+  f = board.select { |space| space != " " }
   binding.pry
 end
 
