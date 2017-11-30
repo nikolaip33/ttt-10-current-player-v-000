@@ -8,7 +8,7 @@ def turn_count(board)
   turn_count = 0
   board.each do |turns|
       if turns == "X" || turns =="O"
-      then turn_count += 1
+      turn_count += 1
       else
       turn_count += 0
           end
